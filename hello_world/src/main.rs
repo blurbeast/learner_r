@@ -12,4 +12,9 @@ fn main() {
 
     let f: bool = true;
     println!("The value of f is: {}", f);
+
+    // character
+    let c: char = 'a';
+    println!("The value of c is: {}", c);
+    
 }
