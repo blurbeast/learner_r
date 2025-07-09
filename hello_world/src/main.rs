@@ -41,22 +41,30 @@ fn main() {
 
     let s = String::from("here is a string");
 
-    // a value can be borrowed multiple times
-    borrow(&s);
-    borrow(&s);
-    borrow(&s);
+    // // a value can be borrowed multiple times
+    // borrow(&s);
+    // borrow(&s);
+    // borrow(&s);
 
-    // when the value is moved it can neither be borrowed nor moved again
-    moved(s);
+    // // when the value is moved it can neither be borrowed nor moved again
+    // moved(s);
 
 
-    let x = String::from("hello world");
-    let y = x.clone();
-    let z  = x;
+    // let x = String::from("hello world");
+    // let y = x.clone();
+    // let z  = x;
 
 
     // panic occurs
     // moved(s);
+
+
+    // positional arguemnts
+    let s1 = String::from("hello");
+    let s2 = String::from("world");
+    let s3 = String::from("!");
+
+    println!("{0} {1} {2}", s1, s2, s3);
 
 }
 
