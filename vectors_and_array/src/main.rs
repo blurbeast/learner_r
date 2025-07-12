@@ -112,6 +112,16 @@ fn main() {
 
     println!("after appending :: {:?}", v);
 
+    v.retain(|e| *e != 80);
+    println!("after retaining :: {:?}", v);
+
+    // v.remove()
+
     // v.iter().enumerate()
 
+    v.iter().find(|e| **e == 0);
+
+    v.iter().enumerate().for_each(|(i, v)| {
+        if *v == 0
+    });
 }
